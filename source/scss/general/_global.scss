@@ -27,118 +27,54 @@ body {
 }
 
 main {
-  padding-top: var(--header-height);
   min-width: 0 !important;
+}
 
-  &.no-padding {
+.nw-first-section, .nw-benefits-section{
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  * {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
     padding: 0;
   }
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-* {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-
-a {
-  display: inline-flex;
-  margin: 0;
-
-  font-style: inherit;
-  font-weight: inherit;
-  font-family: inherit;
-  color: inherit;
-  text-decoration: none;
-
-  cursor: pointer;
-}
-
-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-
-  line-height: initial;
-  color: inherit;
-
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-ul,
-ol,
-li {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-
-img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-picture {
-  display: inline-flex;
-}
-
-label {
-  display: inline-flex;
-}
-
-input {
-  width: 100%;
-
-  background-color: transparent;
-  border: none;
-  outline: none;
-
-  &::placeholder {
-    font-weight: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    font-family: inherit;
+  
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
   }
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  margin: 0;
-
-  appearance: none;
-}
-
-textarea {
-  border: none;
-  outline: none;
-
-  resize: none;
-}
-
-input[type="number"] {
-  appearance: textfield;
+  
+  picture {
+    display: inline-flex;
+  }
+  
 }
 
 .nw-container {
@@ -154,35 +90,10 @@ input[type="number"] {
   }
 }
 
-.panel,
-[data-content] {
-  z-index: 20;
-
-  max-height: 0;
-  overflow: hidden;
-
-  transition: max-height 0.2s;
-}
-
-
-.dis-scroll {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  overflow: hidden;
-
-  overscroll-behavior: none !important;
-  scroll-behavior: none !important;
-}
-
 * {
   &::-webkit-scrollbar {
     width: 8px;
     height: 7px;
-    // display: none;
-
     cursor: pointer;
 
     @include small-tablet {
@@ -209,10 +120,4 @@ input[type="number"] {
   }
 }
 
-fieldset {
-  margin: 0;
-  padding: 0;
-
-  border: none;
-}
 

@@ -1,7 +1,7 @@
 .nw-social-list{
     display: flex;
     grid-gap: clamp(10px, 1.2579vw, 20px);
-
+    z-index: 5;
     &__item{
         @include small-tablet{
             width: 100%;

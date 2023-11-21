@@ -14,11 +14,17 @@
         top: 50%;
         transform: translateY(-50%);
         z-index: 10;
+        border: none;
+        transition: all .4s;
 
         svg{
             width: clamp(12px, 1.0063vw, 16px);
             height: auto;
             fill: transparent;
+        }
+
+        &:hover{
+            transform: translateY(-50%) scale(1.05);
         }
 
         &-next{

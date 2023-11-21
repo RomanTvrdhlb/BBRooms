@@ -1,7 +1,6 @@
 import Swiper from '../vendor/swiper';
-import vars from "../_vars";
 
-const {slider} = vars;
+const slider = document.querySelector('.nw-benefits-slider__container');
 
 if(slider){
   const swiper = new Swiper(slider, {  
