@@ -1,5 +1,5 @@
 .nw-first-section{
-    padding:clamp(50px, 3.7736vw, 60px) 0 clamp(100px, 7.5472vw, 120px);
+    padding:clamp(50px, 3.7736vw, 60px) 0 0;
     position: relative;
 
     &__bg{
@@ -15,6 +15,10 @@
             width: 100%;
             height: 100%;
         }
+
+        @include small-tablet{
+            display: none;
+        }
     }
 
     &__image{
@@ -29,6 +33,39 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        @media (max-width: (1600px)) {
+            right: 5%;
+        }
+
+        @include desktop{
+            right: -1.5%;
+        }
+
+        @include laptop{
+            width: clamp(315px, 28.658vw, 400px);
+            height: clamp(501px, 45.516vw, 645px); 
+        }
+
+        @media (max-width: (1100px)) {
+            width: 315px;
+            height: 501px;
+            right: -9.5%;
+        }
+
+        @include tablet{
+          right: 0;
+          width: clamp(210px, 23.926vw, 245px);
+          height: clamp(340px, 38.574vw, 395px);
+        }
+
+        @include small-tablet{
+            margin-top: 30px;
+            position: static;
+            width: 315px;
+            height: 501px;
+            align-self: center;
         }
     }
 
@@ -51,7 +88,8 @@
             z-index: -1;
         }
 
-        @include tablet{
+        @include small-tablet{
+            margin-top: -10px;
             padding: 36px 0 0;
         }
     }
@@ -66,6 +104,28 @@
         display: flex;
         flex-direction: column;
         grid-gap: 20px;
+
+        @include small-tablet{
+            align-items: center;
+        }
+    }
+
+    &__deskr{
+        color: rgba(var(--cl-a),1.0);
+        font-family: var(--font-family2);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        @include small-tablet{
+            text-align: center;
+        }
+
+        @include ios{
+            max-width: 258px;
+            align-self: center;
+        }
     }
 
     &__text{
@@ -77,21 +137,11 @@
         line-height: normal;
         max-width: 700px;
 
-        @include small-tablet{
+        @include tablet{
+            max-width: 100%;
             text-align: center;
         }
     }
 
-    p{
-        color: rgba(var(--cl-a),1.0);
-        font-family: var(--font-family2);
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-
-        @include small-tablet{
-            text-align: center;
-        }
-    }
+   
 }

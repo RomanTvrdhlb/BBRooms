@@ -9,6 +9,10 @@
   &--yellow{
     color: rgba(var(--cl-c),1.0);
     max-width: 728px;
+
+    @include tablet{
+      max-width: 100%;
+    }
   }
 
   &--big{
@@ -23,6 +27,10 @@
 
   @include tablet{
     text-align: center;
+
+    br{
+      display: none;
+    }
   }
 }
 
@@ -36,8 +44,6 @@
 
   &--mode{
     color: rgba(var(--cl-a),1.0);
-    leading-trim: both;
-    text-edge: cap;
     font-size: 22px;
     text-transform: uppercase;
 

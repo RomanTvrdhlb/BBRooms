@@ -1,7 +1,14 @@
 .nw-social-list{
     display: flex;
-    flex-wrap: wrap;
     grid-gap: clamp(10px, 1.2579vw, 20px);
+
+    &__item{
+        @include small-tablet{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
 
     &__link{
         width: 200px;
@@ -27,10 +34,32 @@
             top: 1.5px;
         }
 
+        @include tablet{
+            width: 50%;
+        }
+
+        @include small-tablet{
+            width: 100%;
+        }
+
+        @include ios{
+            width: 200px;
+        }
         
     }
 
+    @include tablet{
+        flex-direction: column;
+    }
+
     @include small-tablet{
-        justify-content: center;
+       display: grid;
+        width: 100%;
+       grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include ios{
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
     }
 }

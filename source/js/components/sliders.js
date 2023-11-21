@@ -35,6 +35,14 @@ if(slider){
       1240: { 
         slidesPerView: 2.4,
       },
+
+      1920: { 
+        slidesPerView: 2.6,
+      },
+
+      2200: { 
+        slidesPerView: 3,
+      },
     },
   });
   }
