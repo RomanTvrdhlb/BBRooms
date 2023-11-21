@@ -1,0 +1,53 @@
+.nw-main-title{
+  color: rgba(var(--cl-a),1.0);
+  font-family: var(--font-family2);
+  font-size: clamp(30px, 2.5157vw, 40px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  &--yellow{
+    color: rgba(var(--cl-c),1.0);
+    max-width: 728px;
+  }
+
+  &--big{
+    font-family: var(--font-family2);
+    font-size: clamp(30px, 3.1447vw, 50px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    max-width: 913px;
+  }
+
+  @include tablet{
+    text-align: center;
+  }
+}
+
+.nw-main-subtitle{
+  color: rgba(var(--cl-c),1.0);
+  font-family: var(--font-family2);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  &--mode{
+    color: rgba(var(--cl-a),1.0);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 22px;
+    text-transform: uppercase;
+
+    b{
+      color: rgba(var(--cl-c),1.0);
+      font-size: 30px;
+    }
+
+    @include small-tablet{
+      text-align: center;
+    }
+  }
+}

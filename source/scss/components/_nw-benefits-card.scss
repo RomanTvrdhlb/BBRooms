@@ -1,0 +1,41 @@
+.nw-benefits-card{
+    background-color: rgba(var(--bg-c),1.0);
+    padding: 20px 20px 15px  ;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
+    height: 100%;
+
+    &::before{
+        position: absolute;
+        content: '';
+        background-color: rgba(var(--bg-d),1.0);
+        height: 5px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+
+    &__icon{
+        margin-bottom: 46px;
+    }
+
+    &__title{
+        color: rgba(var(--cl-a),1.0);
+        font-family: var(--font-family);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    p{
+        color: rgba(var(--cl-a),1.0);
+        font-family: var(--font-family);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}

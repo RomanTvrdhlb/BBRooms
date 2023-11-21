@@ -1,0 +1,99 @@
+.h2o-green-button {
+  color: rgba(var(--cl-a), 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 225px;
+  z-index: 2;
+  background-color: rgba(var(--bg-c), 1);
+  box-shadow: 0 3px 0 0 #155c18;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  font-family: var(--font-family2);
+  text-align: center;
+  font-size: 16px;
+
+  &:hover {
+    background-color: rgba(var(--bg-d), 1);
+    box-shadow: 0 3px 0 0 #179223;
+  }
+}
+
+.h2o-yellow-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 10px;
+  color: rgba(var(--cl-b), 1);
+  width: 230px;
+  font-size: 12px;
+  font-weight: 700;
+  height: 31px;
+  background-color: rgba(var(--bg-e), 1);
+  box-shadow: 0 3px 0 0 #988105;
+  border-radius: 5px;
+  font-family: var(--font-family2);
+  text-align: center;
+  padding-top: 5px;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: rgba(var(--bg-f), 1);
+    box-shadow: 0 3px 0 0 #ffb400;
+  }
+}
+
+.h2o-red-button {
+  color: rgba(var(--cl-a), 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 225px;
+  z-index: 2;
+  background-color: rgba(var(--bg-p),1.0);
+  box-shadow: 0 3px 0 0 #960000;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  font-family: var(--font-family2);
+  text-align: center;
+  font-size: 16px;
+
+  &:hover {
+    background-color: rgba(var(--bg-r),1.0);
+  }
+}
+
+
+.h2o-play-button{
+  border-bottom: 30px solid transparent;
+    border-left: 36px solid var(--br-a);
+    border-top: 30px solid transparent;
+    cursor: pointer;
+    display: block;
+    height: 0;
+    left: 5.5px;
+    position: relative;
+    top: 10px;
+    transition: transform .3s;
+    width: 0;
+    z-index: 2;
+
+    &:before{
+    border: 5.1px solid var(--br-a);
+    border-radius: 50%;
+    bottom: -51px;
+    content: "";
+    left: -75px;
+    position: absolute;
+    right: -27px;
+    top: -51px;
+    transition: transform .3s;
+    z-index: 2;
+    }
+
+    &:hover{
+      transform: scale(.8);
+    }
+}

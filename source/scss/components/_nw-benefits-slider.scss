@@ -1,0 +1,36 @@
+.nw-benefits-slider{
+    position: relative;
+
+
+    &__btn{
+        width: clamp(30px, 3.3962vw, 54px);
+        height: clamp(30px, 3.3962vw, 54px);
+        background-color: rgba(var(--bg-d),1.0);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+
+        svg{
+            width: clamp(12px, 1.0063vw, 16px);
+            height: auto;
+            fill: transparent;
+        }
+
+        &-next{
+            right: clamp(20px, 3.1447vw, 50px);
+        }
+
+        &-prev{
+            left: clamp(20px, 3.1447vw, 50px);
+
+            svg{
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.nw-social-list{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: clamp(10px, 1.2579vw, 20px);
+
+    &__link{
+        width: 200px;
+        height: 56px;
+        border-radius: 5px;
+        border: 1px solid var(--br-a);
+        background: rgba(var(--bg-e),0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 6px;
+        color: rgba(var(--cl-a),1.0);
+        text-align: center;
+        font-family: var(--font-family);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal; 
+
+        svg, img{
+            fill: transparent;
+            position: relative;
+            top: 1.5px;
+        }
+
+        
+    }
+
+    @include small-tablet{
+        justify-content: center;
+    }
+}

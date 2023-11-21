@@ -1,0 +1,23 @@
+.nw-benefits-section{
+    padding-bottom: clamp(50px, 6.2893vw , 100px);
+    background: linear-gradient(180deg, rgba(51, 19, 93, 0.00) 73.44%, #33135D 100%);
+    position: relative;
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(50px, 4.9686vw , 79px);
+        padding-bottom: clamp(50px, 5.1572vw, 82px);
+    }
+
+    &__bg{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        img,picture{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
